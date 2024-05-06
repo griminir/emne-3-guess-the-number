@@ -7,10 +7,12 @@ Random random = new Random();
 
 int rightNumber = random.Next(1, 101);
 bool rightGuess = false;
+int count = 0;
 
 while (!rightGuess)
 {
     myGuess();
+    count++;
 }
 
 void myGuess()
@@ -22,7 +24,7 @@ void myGuess()
 
     if (rightNumber == guessedNumber && isaNumber)
     {
-        Console.WriteLine("Correct");
+        Console.WriteLine($"Correct you used {count + 1} guesses");
         rightGuess = true;
     } else if (rightNumber > guessedNumber && isaNumber)
     {
