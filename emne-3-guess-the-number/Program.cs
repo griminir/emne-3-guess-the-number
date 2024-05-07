@@ -5,7 +5,7 @@ Console.WriteLine("Guess the number");
 
 var random = new Random();
 
-int rightNumber = random.Next(1, 101);
+int rightNumber = random.Next(1, 100);
 //bool rightGuess = false;
 int count = 0;
 
